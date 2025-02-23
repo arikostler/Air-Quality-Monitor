@@ -1,0 +1,20 @@
+{
+  "name": "bunny-air-quality",
+  "version": "1.0.0",
+  "description": "Reports air quality values from xbee probe in bunny enclosure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Arik Ostler",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.4",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "serialport": "^5.0.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,1 @@
+basic air quality monitor built specifically to be deployed in a small animal building. the qualities monitored are temperature, humidity, and ammonia. the ammonia sensor was to be a backup indicator in case it had been too long since the bedding was changed.

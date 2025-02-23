@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Air Quality</title>
+    <link rel="stylesheet" href="/resources/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/resources/bootstrap/dist/css/bootstrap.min.css"/>
+
+    <script type="text/javascript" src="/resources/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/resources/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<button onclick="location.reload(true);" class="btn btn-default" style="position: fixed; bottom: 0; right: 0;"><i class="fa fa-refresh"></i></button>
+<button onclick="$('#info-panel').show();" class="btn btn-default" style="position: fixed; bottom: 35; right: 0;"><i class="fa fa-question-circle"></i></button>
+<div onclick="location.reload(true);" id="ip_address" style="position: fixed; bottom: 0; width:90%; text-align:left; padding-left:5px;"></div>
+<div class="panel panel-info" id="info-panel" style="display: none; position: fixed; top: 20%; left: 0;">
+	<div class="panel-heading">
+		<i class="fa fa-info-circle fa-fw" style="margin-left: 45%;"></i>
+		<br>
+		<p>Use button on top left of Raspberry Pi touchscreen circuit board to properly shut down this device.</p>
+		<center>
+			<button onclick="$('#info-panel').hide();" class="btn btn-primary">OK</button>
+		</center>
+	</div>
+</div>
+<div id="myApp">
+    <table class="table table-striped">
+        <tr>
+            <td>Temp</td>
+            <td><span id="temperature"></span></td>
+        </tr>
+        <tr>
+            <td>Humidity</td>
+            <td><span id="humidity"></span></td>
+        </tr>
+        <tr>
+            <td>Ammonia</td>
+            <td><span id="ammonia"></span></td>
+        </tr>
+    </table>
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
